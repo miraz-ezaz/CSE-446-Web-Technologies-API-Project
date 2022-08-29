@@ -13,6 +13,7 @@ How to install the project
 ---------------------------
 1. For running the project, install Nodejs, Mongo and Express in computer.
 2. Clone the repository of this prjoect in computer.
+
 Running the Ecommerce Server and Frontend:
 Server:
 1.Go to the directory: /Ecommerce/backend
