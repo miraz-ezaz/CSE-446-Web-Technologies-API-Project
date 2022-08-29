@@ -14,7 +14,7 @@ How to install the project
 1. For running the project, install Nodejs, Mongo and Express in computer.
 2. Clone the repository of this prjoect in computer.
 
-##### Running the Ecommerce Server and Frontend:
+**Running the Ecommerce Server and Frontend:**
 
 ## `Server(Ecommerce)`
 
@@ -50,7 +50,7 @@ This Command will install the required packges.
 4. The server wil start on: http://localhost:3000/
 
 
-##### Running the Bank Server:
+**Running the Bank Server:**
 
 ## `Server(Bank)`
 
@@ -69,7 +69,7 @@ This Command will install the required packges.
 4. The server wil start on: http://localhost:7000/
 5. You may need to change the Databse connection URL in the .env file
 
-##### Running the Supplier Server:
+**Running the Supplier Server:**
 
 ## `Server(Supplier)`
 
