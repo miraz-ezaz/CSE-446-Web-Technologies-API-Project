@@ -24,4 +24,9 @@ Server:
 
   ### `npm install`
  
- This Command will install the required 
+ This Command will install the required packges.
+ 
+ 3. Then Run the command 
+ ### `npm start`
+ 
+ 4. The server wil start on: http://localhost:5000/
