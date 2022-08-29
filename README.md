@@ -8,5 +8,8 @@
        2017331048<br />
        Syed Jamil Mahmood Eftee<br />
        2017331084<br />
+How to install the prjoect
+---------------------------
+       
        
        
