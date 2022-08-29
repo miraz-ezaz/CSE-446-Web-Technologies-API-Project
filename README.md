@@ -16,7 +16,7 @@ How to install the project
 
 Running the Ecommerce Server and Frontend:
 
-Server:
+ ## `Server`
 
 1.Go to the directory: /Ecommerce/backend
 
