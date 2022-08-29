@@ -54,9 +54,9 @@ This Command will install the required packges.
 
 ## `Server(Bank)`
 
-1.Go to the directory: /Bank/backend
+1. Go to the directory: /Bank/backend
 
-2.Open the directory in terminal or Visual Studio Code terminal and run the command
+2. Open the directory in terminal or Visual Studio Code terminal and run the command
 
   ### `npm install`
  
@@ -73,13 +73,13 @@ This Command will install the required packges.
 
 ## `Server(Supplier)`
 
-1.Go to the directory: /Supplier/backend
+1. Go to the directory: /Supplier/backend
 
-2.Open the directory in terminal or Visual Studio Code terminal and run the command
+2. Open the directory in terminal or Visual Studio Code terminal and run the command
 
   ### `npm install`
  
-This Command will install the required packges.
+This command will install the required packages.
  
 3. Then Run the command 
  
