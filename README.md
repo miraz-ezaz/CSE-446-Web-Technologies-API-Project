@@ -18,9 +18,9 @@ How to install the project
 
 ## `Server(Ecommerce)`
 
-1.Go to the directory: /Ecommerce/backend
+1. Go to the directory: /Ecommerce/backend
 
-2.Open the directory in terminal or Visual Studio Code terminal and run the command
+2. Open the directory in terminal or Visual Studio Code terminal and run the command
 
   ### `npm install`
  
@@ -35,9 +35,9 @@ This Command will install the required packges.
 
 ## `Frontend(Ecommerce)`
 
-1.Go to the directory: /Ecommerce/frontend
+1. Go to the directory: /Ecommerce/frontend
 
-2.Open the directory in terminal or Visual Studio Code terminal and run the command
+2. Open the directory in terminal or Visual Studio Code terminal and run the command
 
   ### `npm install`
  
