@@ -14,9 +14,9 @@ How to install the project
 1. For running the project, install Nodejs, Mongo and Express in computer.
 2. Clone the repository of this prjoect in computer.
 
-**Running the E-commerce Server and Frontend:**
+##### Running the Ecommerce Server and Frontend:
 
- ## `Server`
+## `Server(Ecommerce)`
 
 1.Go to the directory: /Ecommerce/backend
 
@@ -24,9 +24,62 @@ How to install the project
 
   ### `npm install`
  
- This Command will install the required packges.
+This Command will install the required packges.
  
- 3. Then Run the command 
- ### `npm start`
+3. Then Run the command 
  
- 4. The server wil start on: http://localhost:5000/
+  ### `npm start`
+ 
+4. The server wil start on: http://localhost:5000/
+
+## `Frontend(Ecommerce)`
+
+1.Go to the directory: /Ecommerce/frontend
+
+2.Open the directory in terminal or Visual Studio Code terminal and run the command
+
+  ### `npm install`
+ 
+This Command will install the required packges.
+ 
+3. Then Run the command 
+ 
+  ### `npm start`
+ 
+4. The server wil start on: http://localhost:3000/
+
+##### Running the Bank Server:
+
+## `Server(Bank)`
+
+1.Go to the directory: /Bank/backend
+
+2.Open the directory in terminal or Visual Studio Code terminal and run the command
+
+  ### `npm install`
+ 
+This Command will install the required packges.
+ 
+3. Then Run the command 
+ 
+  ### `npm start`
+ 
+4. The server wil start on: http://localhost:7000/
+
+##### Running the Supplier Server:
+
+## `Server(Supplier)`
+
+1.Go to the directory: /Bank/backend
+
+2.Open the directory in terminal or Visual Studio Code terminal and run the command
+
+  ### `npm install`
+ 
+This Command will install the required packges.
+ 
+3. Then Run the command 
+ 
+  ### `npm start`
+ 
+4. The server wil start on: http://localhost:7000/
