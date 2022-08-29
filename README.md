@@ -32,7 +32,7 @@ This Command will install the required packges.
  
 4. The server wil start on: http://localhost:5000/
 
-## `Server(Ecommerce)`
+## `Frontend(Ecommerce)`
 
 1.Go to the directory: /Ecommerce/frontend
 
