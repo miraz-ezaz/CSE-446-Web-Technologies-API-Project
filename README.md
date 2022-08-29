@@ -70,7 +70,7 @@ This Command will install the required packges.
 
 ## `Server(Supplier)`
 
-1.Go to the directory: /Bank/backend
+1.Go to the directory: /Supplier/backend
 
 2.Open the directory in terminal or Visual Studio Code terminal and run the command
 
@@ -82,4 +82,4 @@ This Command will install the required packges.
  
   ### `npm start`
  
-4. The server wil start on: http://localhost:7000/
+4. The server wil start on: http://localhost:8000/
