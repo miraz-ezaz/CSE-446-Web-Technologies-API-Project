@@ -83,3 +83,11 @@ This Command will install the required packges.
   ### `npm start`
  
 4. The server wil start on: http://localhost:8000/
+
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
