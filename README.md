@@ -47,3 +47,5 @@ This Command will install the required packges.
   ### `npm start`
  
 4. The server wil start on: http://localhost:3000/
+
+#### Running the Ecommerce Server and Frontend:
