@@ -16,7 +16,7 @@ How to install the project
 
 Running the Ecommerce Server and Frontend:
 
- ## `Server`
+## `Server(Ecommerce)`
 
 1.Go to the directory: /Ecommerce/backend
 
@@ -24,9 +24,26 @@ Running the Ecommerce Server and Frontend:
 
   ### `npm install`
  
- This Command will install the required packges.
+This Command will install the required packges.
  
- 3. Then Run the command 
- ### `npm start`
+3. Then Run the command 
  
- 4. The server wil start on: http://localhost:5000/
+  ### `npm start`
+ 
+4. The server wil start on: http://localhost:5000/
+
+## `Server(Ecommerce)`
+
+1.Go to the directory: /Ecommerce/frontend
+
+2.Open the directory in terminal or Visual Studio Code terminal and run the command
+
+  ### `npm install`
+ 
+This Command will install the required packges.
+ 
+3. Then Run the command 
+ 
+  ### `npm start`
+ 
+4. The server wil start on: http://localhost:3000/
