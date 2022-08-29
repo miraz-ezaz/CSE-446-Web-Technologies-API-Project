@@ -31,6 +31,7 @@ This Command will install the required packges.
   ### `npm start`
  
 4. The server wil start on: http://localhost:5000/
+5. You may need to change the Databse connection URL in the .env file
 
 ## `Frontend(Ecommerce)`
 
@@ -47,6 +48,7 @@ This Command will install the required packges.
   ### `npm start`
  
 4. The server wil start on: http://localhost:3000/
+
 
 ##### Running the Bank Server:
 
@@ -65,6 +67,7 @@ This Command will install the required packges.
   ### `npm start`
  
 4. The server wil start on: http://localhost:7000/
+5. You may need to change the Databse connection URL in the .env file
 
 ##### Running the Supplier Server:
 
@@ -83,11 +86,6 @@ This Command will install the required packges.
   ### `npm start`
  
 4. The server wil start on: http://localhost:8000/
+5. You may need to change the Databse connection URL in the .env file
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
+
