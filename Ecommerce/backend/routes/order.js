@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("../models/User");
 const Order = require("../models/Order");
 
-router.post("/order", async(req,res)=>{
+router.post("/new", async(req,res)=>{
     const{userID,phone,amount,products,address} = req.body;
     try{
     const order = await Order.create({userID,phone,amount,products,address});
@@ -37,4 +37,20 @@ if(newOrder){
         res.json(err)
     }
 });
+
+router.get('/:id',async(req,res)=>{
+    try{
+        const id = req.params.id;
+        const order = await Order.findById(id);
+        if(order){
+            res.status(200).json(order);
+        }
+        
+    }
+    catch(err){
+        res.status(500).json({message: err});
+    }
+   
+})
+
 module.exports = router;

@@ -52,6 +52,7 @@ const cartRoute = require('./routes/cart');
 const authRoute = require('./routes/auth');
 const productRoute = require('./routes/product');
 const paymentRoute = require('./routes/payment');
+const orderRoute = require('./routes/order');
 
 //Middlewear
 app.use('/api/user',userRoute);
@@ -59,6 +60,7 @@ app.use('/api/cart',cartRoute);
 app.use("/api/auth",authRoute);
 app.use("/api/product",productRoute);
 app.use("/api/payment",paymentRoute);
+app.use("/api/order",orderRoute);
 
 
 app.get("/",(req,res)=>{

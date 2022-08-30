@@ -14,6 +14,7 @@ import axios from "axios";
 import { Container,Row,Col,Carousel,Card,Button, Offcanvas } from 'react-bootstrap';
 import CartScreen from "./screens/CartScreen";
 import CheckoutScreen from "./screens/CheckoutScreen";
+import PaymentScreen from "./screens/PaymentScreen";
 
 
 function App() {
@@ -105,6 +106,7 @@ function App() {
               <Route path="/addbank" element={<AddBankScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/checkout" element={<CheckoutScreen />} />
+              <Route path="/payment/:orderID" element={<PaymentScreen />} />
               <Route path="/" element={<HomeScreen />} />
               {/* <Route path="/" element={currentUser ? <HomeScreen />:<Navigate to="/register"/> } /> */}
             </Routes>

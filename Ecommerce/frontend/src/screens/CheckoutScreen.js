@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import AuthService from "../services/AuthService";
 
 import cartService from "../services/cartService";
+import orderService from "../services/orderService";
 import axios from "axios";
 import {
   Table,
@@ -32,12 +33,12 @@ function CheckoutScreen() {
   const user = AuthService.getCurrentUser();
   const [loading, setLoading] = useState(true);
   const [message, setmessage] = useState(false);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const getCart = async (userID) => {
       try {
         const result = await axios.get(
-          "http://localhost:3000/api/cart/" + userID
+          "http://localhost:5000/api/cart/" + userID
         );
         if (result.data.item) {
           setLoading(false);
@@ -52,7 +53,20 @@ function CheckoutScreen() {
       }
     };
     getCart(user._id);
+
+    
   }, []);
+  const makeOrder = async()=>{
+    setLoading(true);
+    const address = {"Area":"Dhaka"}
+    const order = await orderService.createOrder(user._id,user.phone,address);
+    if(order.success)
+    {
+      setLoading(false);
+      navigate(`/payment/${order.orderID}`)
+    }
+
+  };
 
   if (loading) {
     return (
@@ -69,6 +83,7 @@ function CheckoutScreen() {
           <Col>
             <h2>Items in Your Cart</h2>
           </Col>
+          
           <Col>
             <h2>Order Details</h2>
           </Col>
@@ -103,11 +118,14 @@ function CheckoutScreen() {
               </tbody>
             </Table>
           </Col>
+        
           <Col>
-            <Table striped bordered hover></Table>
+          <Button variant="success" onClick={makeOrder}>Proceed To Payment </Button>
           </Col>
         </Row>
-        <Row></Row>
+        <Row>
+        
+        </Row>
       </Container>
     );
   }

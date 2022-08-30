@@ -19,18 +19,28 @@ const OrderSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    products:[
+    products: [
         {
-            productID:{
-                type: String
-            },
-            quantity:{
-                type: Number,
-                default: 1
-
-            },
-        },   
-    ],
+          productID: {
+            type: String,
+          },
+          quantity: {
+            type: Number,
+            default:0
+          },
+          name: {
+            type: String,
+          },
+          price: {
+            type: Number,
+            default:0
+          },
+          total:{
+            type: Number,
+            default:0
+          }
+        },
+      ],
     status:{
         type: String,
         default: "pending"
