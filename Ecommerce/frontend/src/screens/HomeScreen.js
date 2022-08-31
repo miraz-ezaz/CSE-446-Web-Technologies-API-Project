@@ -77,7 +77,7 @@ function HomeScreen() {
             </Card.Text>
             <Button variant="primary" onClick={()=>{cartService.addToCart(user._id,product.productID);alert("Item Added To Cart!");}}>Add to Cart</Button>
             &nbsp;
-            <Button variant="primary" onClick={handleShow}>View</Button>
+            {/* <Button variant="primary" onClick={handleShow}>View</Button> */}
           </Card.Body>
         </Card>
         </Col>
