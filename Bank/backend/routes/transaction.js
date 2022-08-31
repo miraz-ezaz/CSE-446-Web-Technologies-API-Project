@@ -15,7 +15,7 @@ router.put("/transfer",async (req,res)=>{
     console.log(sender);
 
     if(!receiver){
-        res.status(404).json({message:"Receiver Account Not Found",success:false});
+        res.json({message:"Receiver Account Not Found",success:false});
         return;
     }
     
@@ -24,7 +24,7 @@ router.put("/transfer",async (req,res)=>{
 
     if(hashedpin!==req.body.pin)
     {
-        res.status(500).json({message:"Invalid PIN",success:false});
+        res.json({message:"Invalid PIN",success:false});
         return;
     }
 

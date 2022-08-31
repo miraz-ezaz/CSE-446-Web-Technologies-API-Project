@@ -93,6 +93,10 @@ function PaymentScreen() {
             }
           }
         }
+        else{
+          alert(userPay.message);
+          setLoading(false);
+        }
       }
     } catch (error) {}
   };
@@ -117,19 +121,21 @@ function PaymentScreen() {
 
   if (loading) {
     return (
+      <Container className="mt-5 mb-5 ">
       <Spinner animation="border" role="status">
         <span className="visually-hidden">Loading...</span>
       </Spinner>
+      </Container>
     );
   }
   if (order) {
     return (
       <Container className="mt-5" size="lg">
         <ProgressBar
+        style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}
           fluid
           animated
           className="mt-5 mb-5"
-          variant="success"
           now={25}
           label={"Order Confirmed"}
         />
@@ -182,6 +188,7 @@ function PaymentScreen() {
       <Container className="mt-5" size="lg">
         <ProgressBar size="lg">
           <ProgressBar
+          style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}
             animated
             variant="success"
             now={25}
@@ -189,6 +196,7 @@ function PaymentScreen() {
             label={"Order Confirmed"}
           />
           <ProgressBar
+          style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}
             animated
             variant="success"
             now={25}
@@ -202,7 +210,7 @@ function PaymentScreen() {
   if (supplyOrder) {
     return (
       <Container className="mt-5">
-        <ProgressBar>
+        <ProgressBar style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}>
           <ProgressBar
             animated
             variant="success"
@@ -232,7 +240,7 @@ function PaymentScreen() {
     return (
       <>
       <Container className="mt-5" >
-        <ProgressBar>
+        <ProgressBar style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}>
           <ProgressBar
             animated
             variant="success"
