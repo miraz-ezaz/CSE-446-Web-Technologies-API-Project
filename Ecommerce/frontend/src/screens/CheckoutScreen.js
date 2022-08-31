@@ -25,6 +25,7 @@ import {
   Carousel,
   Card,
   Button,
+  Form,
   Offcanvas,
 } from "react-bootstrap";
 
@@ -118,13 +119,53 @@ function CheckoutScreen() {
               </tbody>
             </Table>
           </Col>
-        
           <Col>
-          <Button variant="success" onClick={makeOrder}>Proceed To Payment </Button>
+          <Form>
+          <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+            <Form.Label column sm="2">
+              Account No.
+            </Form.Label>
+            <Col sm="10">
+              <Form.Control plaintext readOnly defaultValue={user.bankacc} />
+            </Col>
+          </Form.Group>
+          <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+            <Form.Label column sm="2">
+              Phone
+            </Form.Label>
+            <Col sm="10">
+              <Form.Control plaintext readOnly defaultValue={user.phone} />
+            </Col>
+          </Form.Group>
+
+          <Form.Group
+            as={Row}
+            className="mb-3"
+            controlId="formPlaintextPassword"
+          >
+            <Form.Label column sm="2">
+              Address
+            </Form.Label>
+            <Col sm="10">
+              <Form.Control
+                required
+                type="text"
+                placeholder="Address"
+                name="address"
+                
+              />
+              
+            </Col>
+          </Form.Group>
+          <Col sm="10"></Col>
+        </Form>
           </Col>
+         
         </Row>
         <Row>
-        
+        <Col>
+          <Button variant="success" onClick={makeOrder}>Proceed To Payment </Button>
+          </Col>
         </Row>
       </Container>
     );
