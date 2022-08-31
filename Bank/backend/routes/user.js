@@ -47,6 +47,7 @@ router.post("/first", async(req,res)=>{
 
 router.post("/balance",async(req,res)=>{
     try{
+        console.log(req.body);
         const user = await User.findOne({accno:req.body.accno});
     if(!user){
         res.status(404).json("Account Not Found");
@@ -72,6 +73,9 @@ res.json(err)
 
 
 
+});
+router.get("/balance",async(req,res)=>{
+    res.sendFile(__dirname + '/balance.html');
 });
 
 router.post('/verify',async(req,res)=>{

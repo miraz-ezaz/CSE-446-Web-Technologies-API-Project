@@ -70,9 +70,10 @@ function HomeScreen() {
           <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={product.image} />
           <Card.Body>
-            <Link to={`/product/${product.productID}`}><Card.Title>{product.name}</Card.Title></Link>
+            <Link to="#"><Card.Title>{product.name}</Card.Title></Link>
             <Card.Text>
             <strong>&#2547;{product.sprice}</strong>
+            <p>{product.description}</p>
             </Card.Text>
             <Button variant="primary" onClick={()=>{cartService.addToCart(user._id,product.productID);alert("Item Added To Cart!");}}>Add to Cart</Button>
             &nbsp;
