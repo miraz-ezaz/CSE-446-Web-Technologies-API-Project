@@ -20,7 +20,7 @@ router.post("/register", async(req,res)=>{
     const newUser =  new User({
         name:req.body.name,
         phone:req.body.phone,
-        pin:CryptoJS.AES.encrypt(req.body.password,process.env.SECRET_KEY)
+        pin:CryptoJS.AES.encrypt(req.body.pin,process.env.SECRET_KEY)
         .toString(),
         accno:acc,
     });
@@ -38,12 +38,12 @@ router.post("/register", async(req,res)=>{
     }
 });
 
-// router.post("/first", async(req,res)=>{
-//     const account = new Account();
-//     account.save();
-//     res.json("SAVED")
+router.post("/first", async(req,res)=>{
+    const account = new Account();
+    account.save();
+    res.json("SAVED")
 
-// });
+});
 
 router.post("/balance",async(req,res)=>{
     try{
@@ -54,6 +54,7 @@ router.post("/balance",async(req,res)=>{
     }
     const hashedpin = CryptoJS.AES.decrypt(user.pin,process.env.SECRET_KEY)
     .toString(CryptoJS.enc.Utf8);
+    console.log(hashedpin);
 
     if(hashedpin!==req.body.pin)
     {
@@ -82,6 +83,8 @@ router.post('/verify',async(req,res)=>{
     }
     const hashedpin = CryptoJS.AES.decrypt(user.pin,process.env.SECRET_KEY)
     .toString(CryptoJS.enc.Utf8);
+    console.log(hashedpin);
+
 
     if(hashedpin!==req.body.pin)
     {

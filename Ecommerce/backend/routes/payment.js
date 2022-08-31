@@ -4,7 +4,7 @@ const User = require("../models/User");
 const Order = require("../models/Order");
 const axios = require("axios");
 
-router.post("/pay",async(req,res)=>{
+router.put("/pay",async(req,res)=>{
     const {senderACC, receiverACC, pin,amount }= req.body;
     
     try{

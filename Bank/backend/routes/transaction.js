@@ -8,10 +8,11 @@ const Transaction = require("../models/Transaction");
 router.put("/transfer",async (req,res)=>{
 
     try{
-    senderACC = req.body.SA;
-    receiverACC = req.body.RA;
+    senderACC = req.body.senderACC;
+    receiverACC = req.body.receiverACC;
     const sender = await User.findOne({accno: senderACC});
     const receiver = await User.findOne({accno: receiverACC});
+    console.log(sender);
 
     if(!receiver){
         res.status(404).json({message:"Receiver Account Not Found",success:false});

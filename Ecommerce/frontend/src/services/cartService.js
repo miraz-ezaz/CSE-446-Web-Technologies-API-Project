@@ -32,7 +32,7 @@ const cartlength = async(userID) =>{
 
 const getCart = async(userID) =>{
     try{
-        const result = await axios.get("http://localhost:5000/api/cart/"+userID).then();
+        const result = await axios.get("http://localhost:5000/api/cart/"+userID);
         return result.data;
     }catch(err){
         return err;

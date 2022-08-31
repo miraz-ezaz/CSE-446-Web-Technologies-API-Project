@@ -18,11 +18,11 @@ const TransactionSchema = new mongoose.Schema({
         required: true
     },senderName: {
         type: String,
-        required: true
+        default: "None"
     },
-    receiver: {
+    receiverName: {
         type: String,
-        required: true
+        default: "None"
     },
     date: {
         type: String,
