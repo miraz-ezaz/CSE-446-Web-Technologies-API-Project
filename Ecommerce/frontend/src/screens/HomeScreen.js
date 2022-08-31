@@ -18,7 +18,7 @@ function HomeScreen() {
   //console.log(user);
 
   useEffect(() => {
-    
+    document.title = "Home";
     const fetchData = async () => {
       const result = await axios.get("/api/product");
       setProducts(result.data);
