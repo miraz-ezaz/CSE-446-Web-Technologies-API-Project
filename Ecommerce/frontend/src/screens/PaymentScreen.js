@@ -134,6 +134,7 @@ function PaymentScreen() {
         <ProgressBar
         style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}
           fluid
+          variant="success"
           animated
           className="mt-5 mb-5"
           now={25}
@@ -186,7 +187,7 @@ function PaymentScreen() {
   if (payment) {
     return (
       <Container className="mt-5" size="lg">
-        <ProgressBar size="lg">
+        <ProgressBar size="lg" style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}>
           <ProgressBar
           style={{height: 30, backgroundColor: "rgba(255, 0, 0, 0.1)"}}
             animated
